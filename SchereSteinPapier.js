@@ -18,7 +18,7 @@ console.log(`You chose ${ZugSpieler}. Computer chose ${ZugComputer}.`);
 
 // Gewinnerlogik
 if (ZugSpieler === ZugComputer) {
-  console.log("Gleichstand!");
+  console.log("Draw!");
 } else if (
   (ZugSpieler === "rock" && ZugComputer === "scissors") ||
   (ZugSpieler === "paper" && ZugComputer === "rock") ||
