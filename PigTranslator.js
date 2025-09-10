@@ -1,5 +1,4 @@
 const args = process.argv.slice(2); // --> Nur die Argumente (Zahlen, Wörer,...) ohne den Pfad und den Speicherort)*//
-const Benutzereingabe = args[0];
 
 const sentence = args[0];
 const words = sentence.split(" ");
