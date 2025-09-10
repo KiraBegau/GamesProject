@@ -11,7 +11,7 @@ if (!moves.includes(ZugSpieler)) {
 }
 
 // Zufall für Computer
-const ZugComputer = moves[Math.floor(Math.random() * moves.length)];
+const ZugComputer = moves[Math.floor(Math.random() * moves.length)]; //* --> Wähle ein Zufälliges aus const moves
 
 // Ausgabe
 console.log(`You chose ${ZugSpieler}. Computer chose ${ZugComputer}.`);
