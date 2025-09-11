@@ -1,6 +1,4 @@
 const args = process.argv.slice(2); // --> Nur die Argumente (Zahlen, Wörer,...) ohne den Pfad und den Speicherort)*//
-const Benutzereingabe = args[0];
-
 const sentence = args[0];
 const words = sentence.split(" "); // --> teile den String nach jedem Leerzeichen (Satz zerlegen damit die Funktion auf alle Wörter einzeln angewendet werden kann)
 
@@ -15,6 +13,7 @@ function istVokal(letter) {
 }
 
 const pigLatinWords = words.map((word) => {
+  //.map geht jedes Wort durch und wendet die Funktion darauf an
   const firstLetter = word[0];
   const secondLetter = word[1];
 
@@ -29,4 +28,4 @@ const pigLatinWords = words.map((word) => {
     return word;
   }
 });
-console.log("You got:", pigLatinWords.join(" "));
+console.log("You got:", pigLatinWords.join(" ")); //join: alles wieder zusammensetzen
